@@ -1,7 +1,9 @@
 const { validationResult } = require('express-validator');
 const repository = require('../repositories/order-repository');
 
-// list
+
+
+// read
 exports.listOrder = async (req, res) => {
   try {           
     const data = await repository.listOrder() //call method get
@@ -10,6 +12,9 @@ exports.listOrder = async (req, res) => {
     res.status(500).send({message: 'Fail to list orders.'});
   }
 };
+
+
+
 
 // create
 exports.createOrder = async (req, res) => { //call method post
@@ -33,6 +38,9 @@ exports.createOrder = async (req, res) => { //call method post
   }
 };
 
+
+
+
 // Update
 exports.updateOrder = async (req, res) => {
   const {errors} = validationResult(req);
@@ -50,6 +58,8 @@ exports.updateOrder = async (req, res) => {
     res.status(500).send({message: 'Failed to update'});
   }
 };
+
+
 
 
 // Delete
