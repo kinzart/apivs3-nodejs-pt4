@@ -1,5 +1,14 @@
+FINISH
+The end of aplication, to see the project online:
+http://apivs3-com-br.umbler.net/
+
+to list (read):
+http://apivs3-com-br.umbler.net/order
+
+
 npm install
 //first thing to do
+
 
 UPDATE
 
