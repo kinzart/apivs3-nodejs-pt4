@@ -1,14 +1,15 @@
-FINISH
-The end of aplication, to see the project online:
+<h2>FINISH</h2>
+<small>The end of aplication!</small> 
 
+to see the project online:<br>
 http://apivs3-com-br.umbler.net/
 
 
-to list (read):
+to list (read):<br>
 http://apivs3-com-br.umbler.net/order
 
-
-npm install
+If you wanna try:
+<h3>npm install</h3>
 //first thing to do
 
 
@@ -47,7 +48,7 @@ useFindAndModify: false,
 
 
 
-DELETE
+<h2>DELETE</h2>
 
 
 1- On name-repository.js
@@ -80,3 +81,6 @@ exports.deleteName = async (req, res) => {
 
 
 Dont forget to test on Postman, localhost:3000/name/id
+
+
+<small>These codes are the result of a highly didactic study published by woliveiras.com.br<small>
