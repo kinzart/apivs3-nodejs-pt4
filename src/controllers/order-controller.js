@@ -52,7 +52,7 @@ exports.updateOrder = async (req, res) => {
 };
 
 
-// delete
+// Delete
 exports.deleteOrder = async (req, res) => {
   try {
     await repository.deleteOrder(req.params.id);

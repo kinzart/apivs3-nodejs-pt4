@@ -2,8 +2,9 @@
   "name": "apivs3-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node bin/server",
     "dev": "node node_modules/nodemon/bin/nodemon bin/server"
   },
   "keywords": [],
