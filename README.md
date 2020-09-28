@@ -62,6 +62,7 @@ useFindAndModify: false,
 
 
 // delete
+
 exports.deleteName = async (req, res) => {
   try {
     await repository.deleteName(req.params.id);
