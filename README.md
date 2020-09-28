@@ -83,4 +83,5 @@ exports.deleteName = async (req, res) => {
 Dont forget to test on Postman, localhost:3000/name/id
 
 
-<small>These codes are the result of a highly didactic study published by woliveiras.com.br<small>
+
+<small style="color: red">These codes are the result of a highly didactic study published by woliveiras.com.br<small>
