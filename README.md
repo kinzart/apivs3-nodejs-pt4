@@ -1,5 +1,6 @@
-<h2>FINISH</h2>
-<small>The end of aplication!</small> 
+<h2>PUBLISHED</h2>
+The end of aplication!
+
 
 to see the project online:<br>
 http://apivs3-com-br.umbler.net/
@@ -80,8 +81,12 @@ exports.deleteName = async (req, res) => {
 
 
 
+
+
+<br>
+
 Dont forget to test on Postman, localhost:3000/name/id
 
+<tr>
 
-
-<small style="color: red">These codes are the result of a highly didactic study published by woliveiras.com.br<small>
+These codes are the result of a highly didactic study published by https://woliveiras.com.br
