@@ -1,4 +1,4 @@
-<h2>PUBLISHED</h2>
+<h1>PUBLISHED</h1>
 The end of aplication!
 
 
@@ -9,9 +9,9 @@ http://apivs3-com-br.umbler.net/
 to list (read):<br>
 http://apivs3-com-br.umbler.net/order
 
-If you wanna try:
+If you wanna try, first thing to do:
 <h3>npm install</h3>
-//first thing to do
+
 
 
 <h2>UPDATE</h2>
