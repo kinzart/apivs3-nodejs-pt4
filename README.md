@@ -16,7 +16,7 @@ If you wanna try, first thing to do:
 
 <h2>UPDATE</h2>
 
-1- LETS TO PUT THE "UPDATE" IN OUR BUSINESS RULES
+1- Lets put our UPDATE on BUSINESS RULES
  repositories/name-repository.js
 
     exports.updateName = async (id, data) => {
@@ -40,7 +40,7 @@ If you wanna try, first thing to do:
     };
 
 
-3- In name-routes.js 
+3- On name-routes.js 
 
     router.put('/:id', nameController.updateName);
 
