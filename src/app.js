@@ -1,13 +1,27 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
-
+const cors = require('cors')
 
 
 // App
 const app = express();
 app.use(express.json()); //use json
 app.use(express.urlencoded({extended: true}));//force json
+
+
+
+
+//========== MIDDLEWARE CORS =================//
+app.use((req, res, next) => {
+    console.log("Middleware working...")
+    res.header("Access-Control-Allow-Origin", "*") // * any app can do req
+    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE")
+    app.use(cors());
+    next()
+});
+
+
 // Database
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
      useNewUrlParser: true,
