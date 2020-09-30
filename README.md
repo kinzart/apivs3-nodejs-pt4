@@ -84,6 +84,27 @@ If you wanna try, first thing to do:
 
 
 
+Finish, now, to work fine in a browser, we have to set the "cors".
+In App.js:
+      
+      
+    const cors = require('cors');
+ 
+ 
+ 
+ 
+    //========== MIDDLEWARE CORS =================//
+    app.use((req, res, next) => {
+        console.log("Middleware working...")
+        res.header("Access-Control-Allow-Origin", "*") // * any app can do req
+        res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE")
+        app.use(cors());
+        next()
+    });
+
+
+
+
 
 
 
