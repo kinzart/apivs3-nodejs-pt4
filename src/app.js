@@ -8,17 +8,16 @@ const cors = require('cors')
 const app = express();
 app.use(express.json()); //use json
 app.use(express.urlencoded({extended: true}));//force json
-
+app.use(cors());
 
 
 
 //========== MIDDLEWARE CORS =================//
 app.use((req, res, next) => {
-    console.log("Middleware working...")
-    res.header("Access-Control-Allow-Origin", "*") // * any app can do req
+    res.header("Access-Control-Allow-Origin", "*") 
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE")
-    app.use(cors());
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE")
+    console.log("Middleware working...")
     next()
 });
 
