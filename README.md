@@ -14,7 +14,7 @@ If you wanna try, first thing to do:
 
 
 
-create a file <.env> an same folder that package.json
+create a file <strong>.env</strong> an same folder that package.json
 
 into .env:
 
@@ -24,7 +24,12 @@ into .env:
 
 
 
-<h2>npm run dev</h2>
+<h3>npm run dev</h3>
+
+
+
+
+
 
 
 
