@@ -109,17 +109,15 @@ In App.js:
       
       
     const cors = require('cors');
+    app.use(cors());
  
  
  
- 
-    //========== MIDDLEWARE CORS =================//
+
     app.use((req, res, next) => {
-        console.log("Middleware working...")
         res.header("Access-Control-Allow-Origin", "*"); // * any app can do req
-        res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+        res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        app.use(cors());
         next()
     });
 
