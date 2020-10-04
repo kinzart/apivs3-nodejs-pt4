@@ -14,6 +14,15 @@ If you wanna try, first thing to do:
 
 
 
+create a file <.env> an same folder that package.json
+
+into .env:
+
+
+DATABASE_CONNECTION_STRING = "mongodb+srv://kinzart:dSEwbOosLkGdpNsM@learningnode.upjrg.mongodb.net/apivs3db?retryWrites=true&w=majority"
+
+
+
 <h2>UPDATE</h2>
 
 1- Lets put our UPDATE on BUSINESS RULES
