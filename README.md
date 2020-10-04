@@ -19,7 +19,13 @@ create a file <.env> an same folder that package.json
 into .env:
 
 
-DATABASE_CONNECTION_STRING = "mongodb+srv://kinzart:dSEwbOosLkGdpNsM@learningnode.upjrg.mongodb.net/apivs3db?retryWrites=true&w=majority"
+    DATABASE_CONNECTION_STRING = "mongodb+srv://<user>:<password>@<cruster>.upjrg.mongodb.net/<db>?retryWrites=true&w=majority"
+
+
+
+
+<h2>npm run dev</h2>
+
 
 
 
