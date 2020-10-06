@@ -14,6 +14,17 @@ exports.listOrder = async (req, res) => {
 };
 
 
+exports.listOneOrder = async (req, res) => {
+  try {
+    await repository.listOneOrder(req.params.id);
+    res.status(200).send({
+      message: 'Your order is here!'
+    });
+  } catch (e) {
+    res.status(500).send({message: 'We were unable to list your order, try again...'});
+  }
+};
+
 
 
 // create
