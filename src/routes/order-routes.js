@@ -6,6 +6,7 @@ const orderController = require('../controllers/order-controller');
 
 router.get('/', orderController.listOrder);
 
+router.get('/:id', orderController.listOrder);
 
 router.post('/',[
     check('address').isLength({ min: 7 }).withMessage("The (adress) need to be true, this adress is low with less letters."),
