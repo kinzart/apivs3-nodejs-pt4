@@ -6,6 +6,12 @@ exports.listOrder = async () => {
   return res;
 };
 
+exports.listOneOrder = async (id) => {
+  const res = await Order.findOne(id)
+  return res
+
+}
+
 exports.createOrder = async data => {
   const order = new Order(data);
   await order.save();
