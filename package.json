@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node bin/server",
+    "start": "npm install",
     "dev": "node node_modules/nodemon/bin/nodemon bin/server"
   },
   "keywords": [
