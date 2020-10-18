@@ -6,6 +6,7 @@ exports.listOrder = async () => {
   return res;
 };
 
+//to view one 
 exports.listOneOrder = async (id) => {
   const res = await Order.findOne(id)
   return res
