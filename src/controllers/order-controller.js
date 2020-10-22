@@ -16,7 +16,7 @@ exports.listOrder = async (req, res) => {
 
 exports.listOneOrder = async (req, res) => {
   try {
-    await repository.listOneOrder(req.params.id);
+    await repository.listOrder(req.params.id);
     res.status(200).send({
       message: 'Your order is here!'
     });
